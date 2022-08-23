@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewModel: ContentViewModel = .init()
     var body: some View {
-        RadNavigationView {
-            getContentView()
-                .navigationBarHidden(true)
-                .ignoresSafeArea(.all)
-        }
+        ParkView()
+//        RadNavigationView {
+//            getContentView()
+//                .navigationBarHidden(true)
+//                .ignoresSafeArea(.all)
+//        }
     }
 
     func getContentView() -> some View {

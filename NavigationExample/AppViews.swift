@@ -38,6 +38,10 @@ public struct NavigationComponent {
         switch viewName {
         case .Secondary:
             SecondaryView()
+        case .Yosemite:
+            Yosemite()
+        case .Sequoia:
+            Sequoia()
         }
     }
 }
@@ -62,4 +66,6 @@ public enum NavigationAction {
 
 public enum AppViews {
     case Secondary
+    case Yosemite
+    case Sequoia
 }

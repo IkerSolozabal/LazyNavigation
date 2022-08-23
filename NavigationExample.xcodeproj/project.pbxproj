@@ -20,6 +20,13 @@
 		F3D9871E28AFB3CD00273EDF /* ContentViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9871D28AFB3CD00273EDF /* ContentViewState.swift */; };
 		F3D9872028AFB4B600273EDF /* RadNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9871F28AFB4B600273EDF /* RadNavigationView.swift */; };
 		F3D9872328AFB68700273EDF /* SecondaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9872228AFB68700273EDF /* SecondaryView.swift */; };
+		F3DF68D228B3A2AF007438AB /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68D128B3A2AF007438AB /* ColorList.swift */; };
+		F3DF68D428B3A2C3007438AB /* ColorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68D328B3A2C3007438AB /* ColorDetail.swift */; };
+		F3DF68D928B3A83C007438AB /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68D828B3A83C007438AB /* Park.swift */; };
+		F3DF68DD28B3A86B007438AB /* ParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68DC28B3A86B007438AB /* ParkView.swift */; };
+		F3DF68DF28B3A8A8007438AB /* ParkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68DE28B3A8A8007438AB /* ParkDetails.swift */; };
+		F3DF68E128B3AA95007438AB /* Yosemite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68E028B3AA95007438AB /* Yosemite.swift */; };
+		F3DF68E328B3AAB7007438AB /* Sequoia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF68E228B3AAB7007438AB /* Sequoia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		F3D9871D28AFB3CD00273EDF /* ContentViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewState.swift; sourceTree = "<group>"; };
 		F3D9871F28AFB4B600273EDF /* RadNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadNavigationView.swift; sourceTree = "<group>"; };
 		F3D9872228AFB68700273EDF /* SecondaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryView.swift; sourceTree = "<group>"; };
+		F3DF68D128B3A2AF007438AB /* ColorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorList.swift; sourceTree = "<group>"; };
+		F3DF68D328B3A2C3007438AB /* ColorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetail.swift; sourceTree = "<group>"; };
+		F3DF68D828B3A83C007438AB /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		F3DF68DC28B3A86B007438AB /* ParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkView.swift; sourceTree = "<group>"; };
+		F3DF68DE28B3A8A8007438AB /* ParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetails.swift; sourceTree = "<group>"; };
+		F3DF68E028B3AA95007438AB /* Yosemite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yosemite.swift; sourceTree = "<group>"; };
+		F3DF68E228B3AAB7007438AB /* Sequoia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequoia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,8 @@
 		F346F47828AFADE500AB0F49 /* NavigationExample */ = {
 			isa = PBXGroup;
 			children = (
+				F3DF68D728B3A82D007438AB /* Park */,
+				F3DF68D028B3A285007438AB /* Colors */,
 				F3D9872128AFB67600273EDF /* SecondaryView */,
 				F3D9871B28AFB38300273EDF /* MainView */,
 				F3D9871A28AFB37400273EDF /* BaseViewModel */,
@@ -124,6 +140,27 @@
 				F3D9872228AFB68700273EDF /* SecondaryView.swift */,
 			);
 			path = SecondaryView;
+			sourceTree = "<group>";
+		};
+		F3DF68D028B3A285007438AB /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F3DF68D128B3A2AF007438AB /* ColorList.swift */,
+				F3DF68D328B3A2C3007438AB /* ColorDetail.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F3DF68D728B3A82D007438AB /* Park */ = {
+			isa = PBXGroup;
+			children = (
+				F3DF68D828B3A83C007438AB /* Park.swift */,
+				F3DF68DC28B3A86B007438AB /* ParkView.swift */,
+				F3DF68DE28B3A8A8007438AB /* ParkDetails.swift */,
+				F3DF68E028B3AA95007438AB /* Yosemite.swift */,
+				F3DF68E228B3AAB7007438AB /* Sequoia.swift */,
+			);
+			path = Park;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,15 +233,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DF68DF28B3A8A8007438AB /* ParkDetails.swift in Sources */,
 				F3D9872028AFB4B600273EDF /* RadNavigationView.swift in Sources */,
+				F3DF68DD28B3A86B007438AB /* ParkView.swift in Sources */,
+				F3DF68D928B3A83C007438AB /* Park.swift in Sources */,
 				F3D9871828AFB36100273EDF /* ContentViewModel.swift in Sources */,
 				F3D9871328AFB1F700273EDF /* AppViews.swift in Sources */,
 				F3D9872328AFB68700273EDF /* SecondaryView.swift in Sources */,
 				F346F47C28AFADE500AB0F49 /* ContentView.swift in Sources */,
 				F34CAD4628AFAFC400EA0AA5 /* AsyncContentView.swift in Sources */,
 				F34CAD4828AFAFDB00EA0AA5 /* ViewState.swift in Sources */,
+				F3DF68E128B3AA95007438AB /* Yosemite.swift in Sources */,
 				F346F47A28AFADE500AB0F49 /* NavigationExampleApp.swift in Sources */,
 				F34CAD4428AFAF8B00EA0AA5 /* NavigationExtension.swift in Sources */,
+				F3DF68E328B3AAB7007438AB /* Sequoia.swift in Sources */,
+				F3DF68D228B3A2AF007438AB /* ColorList.swift in Sources */,
+				F3DF68D428B3A2C3007438AB /* ColorDetail.swift in Sources */,
 				F3D9871E28AFB3CD00273EDF /* ContentViewState.swift in Sources */,
 				F3D9871128AFB1CD00273EDF /* BaseViewModel.swift in Sources */,
 			);

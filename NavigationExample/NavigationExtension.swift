@@ -26,17 +26,10 @@ public extension View {
         isPresented binding: Binding<Bool>,
         @ViewBuilder destination: () -> Destination
     ) -> some View {
-        if #available(iOS 15.0, *) {
-            background(alignment: .center) {
-                NavigationLink(binding) {
-                    destination()
-                }
+        background(alignment: .center) {
+            NavigationLink(binding) {
+                SecondaryView()
             }
-        } else {
-            background(NavigationLink(
-                binding,
-                destination: destination
-            ))
         }
     }
 }
