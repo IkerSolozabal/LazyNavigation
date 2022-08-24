@@ -64,8 +64,10 @@ public enum NavigationAction {
 
 // MARK: - Application Views
 
-public enum AppViews {
+public enum AppViews: String, Hashable, CaseIterable, Identifiable {
     case Secondary
     case Yosemite
     case Sequoia
+
+    public var id: String { self.rawValue }
 }

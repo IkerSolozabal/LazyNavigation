@@ -9,37 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel: ContentViewModel = .init()
+    @State var path: [AppViews] = []
     var body: some View {
-        ParkView()
-//        RadNavigationView {
-//            getContentView()
-//                .navigationBarHidden(true)
-//                .ignoresSafeArea(.all)
-//        }
-    }
-
-    func getContentView() -> some View {
-        AsyncContentView(
-            source: self.viewModel,
-            loadingView: Text("loading..."),
-            content: AnyView(
-                VStack {
-                    Text("Main View")
-                    Button("Go to Example screen", action: {
-                        showExampleScreen()
-                    })
+        NavigationStack(path: $path) {
+            ForEach(AppViews.allCases) { view in
+                NavigationLink("", value: view)
+            }
+            .navigationDestination(for: AppViews.self) { view in
+                Spacer()
+                Text(view.rawValue)
+                    .navigationTitle(view.rawValue)
+                Spacer()
+                Button("Go to root") {
+                    path = []
                 }
-            )
-        )
+                Spacer()
+            }
+            getRootView()
+        }
+        .navigationBarHidden(false)
+        .navigationTitle("Roor View")
     }
 
-    func showExampleScreen() {
-        self.viewModel.triggerEvent(
-            event: .navigate(
-                appView: .Secondary,
-                setupData: nil,
-                presentation: .fullScreen
-            )
-        )
+    @ViewBuilder
+    func getRootView() -> some View {
+        VStack {}
+        Spacer()
+        Button("Go to park Yosemite") {
+            path = [.Yosemite]
+        }
+        Spacer()
+        Button("Go to park Sequoaia") {
+            path = [.Sequoia, .Yosemite, .Secondary]
+        }
+        Spacer()
     }
 }

@@ -83,6 +83,7 @@
 		F346F47828AFADE500AB0F49 /* NavigationExample */ = {
 			isa = PBXGroup;
 			children = (
+				F3EC5CD628B617D700BCB177 /* Navigation */,
 				F3DF68D728B3A82D007438AB /* Park */,
 				F3DF68D028B3A285007438AB /* Colors */,
 				F3D9872128AFB67600273EDF /* SecondaryView */,
@@ -161,6 +162,13 @@
 				F3DF68E228B3AAB7007438AB /* Sequoia.swift */,
 			);
 			path = Park;
+			sourceTree = "<group>";
+		};
+		F3EC5CD628B617D700BCB177 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
